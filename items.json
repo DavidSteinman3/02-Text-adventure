@@ -1,0 +1,16 @@
+{
+    "PAMPHLET": {
+       "exits": {},
+       "actions": {
+          "look": "The coin is so shiny, you can see your own reflection!"
+       },
+       "points": 5
+    },
+    "SWORD": {
+       "exits": {
+          "CELLA": "The necklace shines brigher than ever!"
+       },
+       "actions": {},
+       "points": 5
+    }
+ }

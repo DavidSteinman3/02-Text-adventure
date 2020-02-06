@@ -1,0 +1,256 @@
+{
+	"WHOUS": {
+		"name": "West of House",
+		"desc": "You are being held prisoner in the basement of an evil emperors mansion, you must find a way out while taking as much treasure as possible in order to reunite with your family and help feed them.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "NHOUS"
+		}, {
+			"exit": "SOUTH",
+			"target": "SHOUS"
+		}, {
+			"exit": "WEST",
+			"target": "FORE1"
+		}],
+		"items": [
+            {
+                "item": "COIN",
+                "desc": "A shiny coin is sitting on the ground.",
+                "take": "You pick the coin up off the ground."
+            }
+        ]
+	},
+	"NHOUS": {
+		"name": "Corridor",
+		"desc": "You are in a long and winding corridor with doors on each side of the hallway, the door behind you has locked... There is no turning back now",
+		"exits": [{
+			"exit": "WEST",
+			"target": "KITCH"
+		}, {
+			"exit": "EAST",
+			"target": "EHOUS"
+		}, {
+			"exit": "NORTH",
+			"target": "FORE3"
+		}],
+		"items": []
+	},
+	"SHOUS": {
+		"name": "Graveyard",
+		"desc": "You are now in a dimly lit room with skeletons everywhere.",
+		"exits": [{
+			"exit": "WEST",
+			"target": "WHOUS"
+		}, {
+			"exit": "EAST",
+			"target": "EHOUS"
+		}, {
+			"exit": "SOUTH",
+			"target": "FORE2"
+		}],
+		"items": []
+	},
+	"EHOUS": {
+		"name": "Dark Room",
+		"desc": "It is too dark to see anything...",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "NHOUS"
+		}, {
+			"exit": "SOUTH",
+			"target": "SHOUS"
+		}, {
+			"exit": "EAST",
+			"target": "CLEAR"
+		}, {
+			"exit": "WEST",
+			"target": "KITCH"
+		}, {
+			"exit": "ENTER",
+			"target": "KITCH"
+		}],
+		"items": []
+	},
+	"KITCH": {
+		"name": "Kitchen",
+		"desc": "You are now in the basement's kitchen, There are rumors that the chef is insane and carries a large knife with him, better get out quick.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "EHOUS"
+		}, {
+			"exit": "WEST",
+			"target": "LROOM"
+		}, {
+			"exit": "EXIT",
+			"target": "EHOUS"
+		}, {
+			"exit": "UP",
+			"target": "ATTIC"
+		}],
+		"items": []
+	},
+	"ATTIC": {
+		"name": "Pantry",
+		"desc": "The chefs pantry is above the kitchen, there is food being stored here, nothing in here of benefit to you though.",
+		"exits": [{
+			"exit": "DOWN",
+			"target": "KITCH"
+		}],
+		"items": []
+	},
+	"LROOM": {
+		"name": "Cellar",
+		"desc": "There are jail cells with skeletons in them, better get out before you end up like them",
+		"exits": [{
+			"exit": "EAST",
+			"target": "KITCH"
+		}, {
+			"exit": "WEST",
+			"target": "BLROO"
+		}, {
+			"exit": "DOWN",
+			"target": "CELLA"
+		}],
+		"items": [
+            {
+                "item": "Necklace",
+                "desc": "A diamond necklace is around one of the skeletons.",
+                "take": "You take the necklace from the corpse. Thats gotta be bad karma..."
+            }
+        ]
+	},
+	"FORE1": {
+		"name": "Forest",
+		"desc": "This is a forest, with trees in all directions around you.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "FORE1"
+		}, {
+			"exit": "EAST",
+			"target": "FORE3"
+		}, {
+			"exit": "SOUTH",
+			"target": "FORE2"
+		}, {
+			"exit": "WEST",
+			"target": "FORE1"
+		}],
+		"items": []
+	},
+	"FORE2": {
+		"name": "Forest",
+		"desc": "This is a dimly lit forest, with large trees all around.  To the\neast, there appears to be sunlight.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "SHOUS"
+		}, {
+			"exit": "EAST",
+			"target": "CLEAR"
+		}, {
+			"exit": "SOUTH",
+			"target": "FORE4"
+		}, {
+			"exit": "WEST",
+			"target": "FORE1"
+		}],
+		"items": []
+	},
+	"FORE3": {
+		"name": "Forest",
+		"desc": "This is a dark forest, there are growls and screeches coming from all directions, you are still on the emperors property, you aren't done yet.",
+		"exits": [{
+			"exit": "UP",
+			"target": "TREE"
+		}, {
+			"exit": "NORTH",
+			"target": "FORE2"
+		}, {
+			"exit": "EAST",
+			"target": "CLEAR"
+		}, {
+			"exit": "SOUTH",
+			"target": "CLEAR"
+		}, {
+			"exit": "WEST",
+			"target": "NHOUS"
+		}],
+		"items": []
+	},
+	"TREE": {
+		"name": "Up a Tree",
+		"desc": "The canopy of an especially large willow tree",
+		"exits": [{
+			"exit": "DOWN",
+			"target": "FORE3"
+		}],
+		"items": []
+	},
+	"FORE4": {
+		"name": "Forest",
+		"desc": "The foliage is so dense you cannot see anythng around you.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "CLTOP"
+		}, {
+			"exit": "NORTH",
+			"target": "FORE5"
+		}, {
+			"exit": "SOUTH",
+			"target": "FORE4"
+		}, {
+			"exit": "WEST",
+			"target": "FORE2"
+		}],
+		"items": []
+	},
+	"FORE5": {
+		"name": "Forest",
+		"desc": "This is a forest, with trees in all directions around you.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "FORE5"
+		}, {
+			"exit": "SE",
+			"target": "CLTOP"
+		}, {
+			"exit": "SOUTH",
+			"target": "FORE4"
+		}, {
+			"exit": "WEST",
+			"target": "FORE2"
+		}],
+		"items": []
+	},
+	"CLEAR": {
+		"name": "Clearing",
+		"desc": "You finally made it out of the forest, but a wall lies ahead with archers sitting on top of it",
+		"exits": [{
+			"exit": "SW",
+			"target": "EHOUS"
+		}, {
+			"exit": "SE",
+			"target": "FORE5"
+		}, {
+			"exit": "NORTH",
+			"target": "CLEAR"
+		}, {
+			"exit": "EAST",
+			"target": "CLEAR"
+		}, {
+			"exit": "WEST",
+			"target": "FORE3"
+		}, {
+			"exit": "SOUTH",
+			"target": "CELLA"
+		}],
+		"items": []
+	},
+	"CELLA": {
+		"name": "Front gate",
+		"desc": "Congratulations prisoner! you finally made it out of the front gate, your family will be thrilled to see you're still alive!",
+		"exits": [{
+		
+		}],
+		"items": []
+	}
+}
